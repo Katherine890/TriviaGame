@@ -1,0 +1,27 @@
+body {
+    background-image: url("../images/harrypotterwallpaper.jpg");
+    width: 100%;
+}
+
+.container {
+    background-color: white;
+    width: 900px;
+    text-align: center;
+    opacity: 0.7;
+    position: relative;
+    left: 300px;
+
+}
+
+header {
+    font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.results {
+    display: none;
+}
