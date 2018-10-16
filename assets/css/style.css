@@ -3,18 +3,81 @@ body {
     width: 100%;
 }
 
+/* The whole body */
 .container {
     background-color: white;
     width: 900px;
     text-align: center;
-    opacity: 0.7;
     position: relative;
     left: 300px;
+    padding-bottom: 30px;
 
 }
 
-header {
+/* The start button */
+.startbutton {
     font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+    background-color: silver;
+    width: 90px;
+    height: 35px;
+}
+
+button:hover {
+    background-color: #0295b9;
+    border-top-color: #05697e;
+    border-left-color: #05697e;
+    border-bottom-color: #59b5cc;
+    border-right-color: #59b5cc;
+}
+
+/* Content */
+.content {
+
+}
+
+.content input {
+    background-color: white;
+    border-style: none;
+    font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.content input:hover {
+    background-color: #0295b9;
+    border-top-color: #05697e;
+    border-left-color: #05697e;
+    border-bottom-color: #59b5cc;
+    border-right-color: #59b5cc;
+}
+
+.question1,
+.question2,
+.question3,
+.question4,
+.question5,
+.question6,
+.question7,
+.question8 {
+    display: none;
+    opacity: 1;
+    font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+.timedisplay {
+    display: none;
+}
+
+header,
+h2 {
+    font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    display: none;
 }
 
 h3 {
@@ -22,6 +85,25 @@ h3 {
     font-size: 16px;
 }
 
+/* results for individual question */
+.correct,
+.wrong,
+.correctdobby {
+    display: none;
+}
+
+#dobby-image {
+    display: none;
+    width: 300px;
+    height: 200px;
+}
+
+/* Results */
 .results {
+    display: none;
+}
+
+/* Play Again */
+.playagain {
     display: none;
 }

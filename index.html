@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Harry Potter Trivia</title>
+    <!--Link to font-->
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <!--Link to CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--Link to jQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Link to JavaScript-->
     <script src="assets/javascript/app.js"></script>
 </head>
 <body>
@@ -18,51 +22,124 @@
             <h1>Harry Potter Trivia</h1>
         </header>
 
-        <h3>Time Remaining:</h3><br>
-        <h3>What was the name of the Elf who worked for the Malfoys?</h3><br>
-        <!--Kreacher, Winky, (Dobby), Hokey, Poe-->
-        <div class="question1"></div>
+        <!--Start Button-->
+        <button class="startbutton">Start</button><br>
+        <h2 class="goodluck">Good Luck!</h2>
 
-        <h3>Who was Harry's GodFather</h3><br>
-        <!--Remus Lupin, (Sirius Black), Severus Snape, Alastor Moody, Gilderoy Lockhart-->
-        <div class="question2"></div>
+        <!--Trivia Gameplay-->
+        <div class="content">
 
-        <h3>What was Harry Potter's patronus?</h3><br>
-        <!--(stag), horse, hare, swan, fox-->
-        <div class="question3"></div>
+            <!--Time-->
+            <h3 class="timedisplay">Time Remaining:<h3 id="time"></h3></h3><br>
 
-        <h3>What was the name of the creature that lived in the chamber of secrets?</h3><br>
-        <!--(Basilisk), Hippogriff, Centaur, Phoenix, Thunderbird-->
-        <div class="question4"></div>
+            <!--Displays for wrong answer or right answer-->
+            <h3 class="correct">Correct!</h3>
+            <h3 class="wrong">Wrong!</h3>
 
-        <h3>Which of these characters were not petrified during the Chamber of Secrets?</h3><br>
-        <!--Colin Creevey, Hermione, Mrs. Norris, Nearly Headless Nick, (Hagrid)-->
-        <div class="question5"></div>
+            <!--Displays correct answer if user guesses wrong-->
+            <h3 class="correctdobby">Correct Answer: Dobby</h3>
 
-        <h3>What is the spell that erases part of ones memory?</h3><br>
-        <!--Expecto Patronum, Alohomora, Expelliarmus, Sectumsempra, (Obliviate)-->
-        <div class="question6"></div>
+            <!--Images displayed after right/wrong answer-->
+            <img id="dobby-image" src="assets/images/dobby.jpg" alt="dobby">
 
-        <h3>Who haunts the girl's bathroom at Hogwarts?</h3><br>
-        <!--Screaming Serah, Crying Crystal, Laughing Luna, (Moaning Myrtle), Yelling Yolanda -->
-        <div class="question7"></div>
+            <h3 class="question1">What was the name of the Elf who worked for the Malfoys?</h3>
+            <!--Kreacher, Winky, (Dobby), Hokey, Poe-->
+            <form class="question1">
+                <input class="wrongchoice" type="button" name="question" value="Kreacher"><br>
+                <input class="wrongchoice" type="button" name="question" value="Winky"><br>
+                <input id="dobby" type="button" name="question" value="Dobby"><br>
+                <input class="wrongchoice" type="button" name="question" value="Hokey"><br>
+                <input class="wrongchoice" type="button" name="question" value="Poe"><br>
+            </form><br>
 
-        <h3>What is the phrase used to clear the Marauder's Map?</h3><br>
-        <!--"End Quest", ("Mischief Managed"), "Shenanigans Secured", "Trouble Terminated", "Havoc Handled"-->
-        <div class="question8"></div><br>
+            
 
+            <h3 class="question2">Who was Harry's GodFather</h3>
+            <!--Remus Lupin, (Sirius Black), Severus Snape, Alastor Moody, Gilderoy Lockhart-->
+            <form class="question2">
+                    <input type="button" name="question" value="Remus Lupin"><br>
+                    <input type="button" name="question" value="Sirius Black"><br>
+                    <input type="button" name="question" value="Severus Snape"><br>
+                    <input type="button" name="question" value="Alastor Moody"><br>
+                    <input type="button" name="question" value="Gilderoy Lockhart"><br>
+                </form><br>
+
+            <h3 class="question3">What was Harry Potter's patronus?</h3>
+            <!--(stag), horse, hare, swan, fox-->
+            <form class="question3">
+                    <input type="button" name="question" value="stag"><br>
+                    <input type="button" name="question" value="horse"><br>
+                    <input type="button" name="question" value="hare"><br>
+                    <input type="button" name="question" value="swan"><br>
+                    <input type="button" name="question" value="fox"><br>
+                </form><br>
+
+            <h3 class="question4">What was the name of the creature that lived in the chamber of secrets?</h3>
+            <!-- Phoenix, Hippogriff, Centaur, (Basilisk), Thunderbird-->
+            <form class="question4">
+                    <input type="button" name="question" value="Phoenix"><br>
+                    <input type="button" name="question" value="Hippogriff"><br>
+                    <input type="button" name="question" value="Centaur"><br>
+                    <input type="button" name="question" value="Basilisk"><br>
+                    <input type="button" name="question" value="Thunderbird"><br>
+                </form><br>
+
+            <h3 class="question5">Which of these characters were not petrified during the Chamber of Secrets?</h3>
+            <!--Colin Creevey, Hermione, Mrs. Norris, Nearly Headless Nick, (Hagrid)-->
+            <form class="question5">
+                    <input type="button" name="question" value="Colin Creevey"><br>
+                    <input type="button" name="question" value="Hermione"><br>
+                    <input type="button" name="question" value="Mrs. Norris"><br>
+                    <input type="button" name="question" value="Nearly Headless Nick"><br>
+                    <input type="button" name="question" value="Hagrid"><br>
+                </form><br>
+
+            <h3 class="question6">What is the spell that erases part of ones memory?</h3>
+            <!--Expecto Patronum, Alohomora, Expelliarmus, Sectumsempra, (Obliviate)-->
+            <form class="question6">
+                    <input type="button" name="question" value="Expecto Patronum"><br>
+                    <input type="button" name="question" value="Alohomora"><br>
+                    <input type="button" name="question" value="Expelliarmus"><br>
+                    <input type="button" name="question" value="Sectumsempra"><br>
+                    <input type="button" name="question" value="Obliviate"><br>
+                </form><br>
+
+            <h3 class="question7">Who haunts the girl's bathroom at Hogwarts?</h3>
+            <!--Screaming Serah, Crying Crystal, Laughing Luna, (Moaning Myrtle), Yelling Yolanda -->
+            <form class="question7">
+                    <input type="button" name="question" value="Screaming Serah"><br>
+                    <input type="button" name="question" value="Crying Crystal"><br>
+                    <input type="button" name="question" value="Laughing Luna"><br>
+                    <input type="button" name="question" value="Moaning Myrtle"><br>
+                    <input type="button" name="question" value="Yelling Yolanda"><br>
+                </form><br>
+
+            <h3 class="question8">What is the phrase used to clear the Marauder's Map?</h3>
+            <!--"End Quest", ("Mischief Managed"), "Shenanigans Secured", "Trouble Terminated", "Havoc Handled"-->
+            <form class="question8">
+                    <input type="button" name="question" value="'End Quest'"><br>
+                    <input type="button" name="question" value="'Mischief Managed'"><br>
+                    <input type="button" name="question" value="'Shenanigans Secured'"><br>
+                    <input type="button" name="question" value="'Trouble Terminated'"><br>
+                    <input type="button" name="question" value="'Havoc Handled'"><br>
+                </form><br>
+
+        </div>
+
+        <!--Results at End of Game-->
         <div class="results">
             <h3 id="Pass">Well Done!</h3>
             <h3 id="Fail">Nice Try</h3>
-            <h3>Correct Answers:</h3>
-            <h3 id="rightanswers"></h3>
-            <h3>Incorrect Answers:</h3>
-            <h3 id="wronganswers"></h3>
-            <h3>Unanswered:</h3>
-            <h3 id="unanswered"></h3>
+
+            <h3>Correct Answers:<h3 id="rightanswers"></h3></h3>
+        
+            <h3>Incorrect Answers:<h3 id="wronganswers"></h3></h3>
+           
+            <h3>Unanswered:<h3 id="unanswered"></h3></h3>
+           
         </div>
 
-
+        <button class="playagain">Play Again</button>
 
     </div>
 </body>
