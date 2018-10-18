@@ -33,10 +33,6 @@ button:hover {
 }
 
 /* Content */
-.content {
-
-}
-
 .content input {
     background-color: white;
     border-style: none;
@@ -76,23 +72,37 @@ h2 {
     font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;
 }
 
-h2 {
-    display: none;
-}
-
 h3 {
     font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
 
 /* results for individual question */
+#pass,
+#fail,
+.goodluck,
 .correct,
 .wrong,
-.correctdobby {
+.outoftime,
+.correctdobby,
+.correctblack,
+.correctstag,
+.correctbasilisk,
+.correcthagrid,
+.correctobliviate,
+.correctmyrtle,
+.correctmap {
     display: none;
 }
 
-#dobby-image {
+#dobby-image,
+#black-image,
+#stag-image,
+#basilisk-image,
+#hagrid-image,
+#obliviate-image,
+#myrtle-image,
+#map-image {
     display: none;
     width: 300px;
     height: 200px;

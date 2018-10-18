@@ -33,14 +33,26 @@
             <h3 class="timedisplay">Time Remaining:<h3 id="time"></h3></h3><br>
 
             <!--Displays for wrong answer or right answer-->
-            <h3 class="correct">Correct!</h3>
-            <h3 class="wrong">Wrong!</h3>
+            <h2 class="correct">Correct!</h3>
+            <h2 class="wrong">Wrong!</h3>
+            <h2 class="outoftime">Out of Time!</h3>
 
-            <!--Displays correct answer if user guesses wrong-->
-            <h3 class="correctdobby">Correct Answer: Dobby</h3>
+            <!--Results at End of Game-->
+            <div class="results">
+                <h3 id="pass">Bloody Wicked!</h3>
+                <h3 id="fail">Bloody Hell...</h3>
 
+                <h3>Correct Answers:<h3 id="rightanswers"></h3></h3>
+        
+             <h3>Incorrect Answers:<h3 id="wronganswers"></h3></h3>
+           
+                <h3>Unanswered:<h3 id="unanswered"></h3></h3>
+           
+             </div>
+
+
+            <!--Display correct answer if user guesses wrong-->
             <!--Images displayed after right/wrong answer-->
-            <img id="dobby-image" src="assets/images/dobby.jpg" alt="dobby">
 
             <h3 class="question1">What was the name of the Elf who worked for the Malfoys?</h3>
             <!--Kreacher, Winky, (Dobby), Hokey, Poe-->
@@ -51,94 +63,96 @@
                 <input class="wrongchoice" type="button" name="question" value="Hokey"><br>
                 <input class="wrongchoice" type="button" name="question" value="Poe"><br>
             </form><br>
+            <h3 class="correctdobby">Correct Answer: Dobby</h3>
+            <img id="dobby-image" src="assets/images/dobby.jpg" alt="dobby">
 
             
 
-            <h3 class="question2">Who was Harry's GodFather</h3>
+            <h3 class="question2">Who was Harry's GodFather?</h3>
             <!--Remus Lupin, (Sirius Black), Severus Snape, Alastor Moody, Gilderoy Lockhart-->
             <form class="question2">
-                    <input type="button" name="question" value="Remus Lupin"><br>
-                    <input type="button" name="question" value="Sirius Black"><br>
-                    <input type="button" name="question" value="Severus Snape"><br>
-                    <input type="button" name="question" value="Alastor Moody"><br>
-                    <input type="button" name="question" value="Gilderoy Lockhart"><br>
+                    <input class="wrongchoice2" type="button" name="question" value="Remus Lupin"><br>
+                    <input id="black" type="button" name="question" value="Sirius Black"><br>
+                    <input class="wrongchoice2" type="button" name="question" value="Severus Snape"><br>
+                    <input class="wrongchoice2" type="button" name="question" value="Alastor Moody"><br>
+                    <input class="wrongchoice2" type="button" name="question" value="Gilderoy Lockhart"><br>
                 </form><br>
+                <h3 class="correctblack">Correct Answer: Sirius Black</h3>
+                <img id="black-image" src="assets/images/siriusblack.JPG" alt="black">
 
             <h3 class="question3">What was Harry Potter's patronus?</h3>
             <!--(stag), horse, hare, swan, fox-->
             <form class="question3">
-                    <input type="button" name="question" value="stag"><br>
-                    <input type="button" name="question" value="horse"><br>
-                    <input type="button" name="question" value="hare"><br>
-                    <input type="button" name="question" value="swan"><br>
-                    <input type="button" name="question" value="fox"><br>
+                    <input id="stag" type="button" name="question" value="stag"><br>
+                    <input class="wrongchoice3" type="button" name="question" value="horse"><br>
+                    <input class="wrongchoice3" type="button" name="question" value="hare"><br>
+                    <input class="wrongchoice3" type="button" name="question" value="swan"><br>
+                    <input class="wrongchoice3" type="button" name="question" value="fox"><br>
                 </form><br>
+                <h3 class="correctstag">Correct Answer: Stag</h3>
+                <img id="stag-image" src="assets/images/stag.jpg" alt="stag">
 
             <h3 class="question4">What was the name of the creature that lived in the chamber of secrets?</h3>
             <!-- Phoenix, Hippogriff, Centaur, (Basilisk), Thunderbird-->
             <form class="question4">
-                    <input type="button" name="question" value="Phoenix"><br>
-                    <input type="button" name="question" value="Hippogriff"><br>
-                    <input type="button" name="question" value="Centaur"><br>
-                    <input type="button" name="question" value="Basilisk"><br>
-                    <input type="button" name="question" value="Thunderbird"><br>
+                    <input class="wrongchoice4" type="button" name="question" value="Phoenix"><br>
+                    <input class="wrongchoice4" type="button" name="question" value="Hippogriff"><br>
+                    <input class="wrongchoice4" type="button" name="question" value="Centaur"><br>
+                    <input id="basilisk" type="button" name="question" value="basilisk"><br>
+                    <input class="wrongchoice4" type="button" name="question" value="Thunderbird"><br>
                 </form><br>
+                <h3 class="correctbasilisk">Correct Answer: Basilisk</h3>
+                <img id="basilisk-image" src="assets/images/basilisk.jpg" alt="basilisk">
 
             <h3 class="question5">Which of these characters were not petrified during the Chamber of Secrets?</h3>
             <!--Colin Creevey, Hermione, Mrs. Norris, Nearly Headless Nick, (Hagrid)-->
             <form class="question5">
-                    <input type="button" name="question" value="Colin Creevey"><br>
-                    <input type="button" name="question" value="Hermione"><br>
-                    <input type="button" name="question" value="Mrs. Norris"><br>
-                    <input type="button" name="question" value="Nearly Headless Nick"><br>
-                    <input type="button" name="question" value="Hagrid"><br>
+                    <input class="wrongchoice5" type="button" name="question" value="Colin Creevey"><br>
+                    <input class="wrongchoice5" type="button" name="question" value="Hermione"><br>
+                    <input class="wrongchoice5" type="button" name="question" value="Mrs. Norris"><br>
+                    <input class="wrongchoice5" type="button" name="question" value="Nearly Headless Nick"><br>
+                    <input id="hagrid" type="button" name="question" value="hagrid"><br>
                 </form><br>
+                <h3 class="correcthagrid">Correct Answer: Hagrid</h3>
+                <img id="hagrid-image" src="assets/images/hagrid.jpg" alt="hagrid">
 
             <h3 class="question6">What is the spell that erases part of ones memory?</h3>
             <!--Expecto Patronum, Alohomora, Expelliarmus, Sectumsempra, (Obliviate)-->
             <form class="question6">
-                    <input type="button" name="question" value="Expecto Patronum"><br>
-                    <input type="button" name="question" value="Alohomora"><br>
-                    <input type="button" name="question" value="Expelliarmus"><br>
-                    <input type="button" name="question" value="Sectumsempra"><br>
-                    <input type="button" name="question" value="Obliviate"><br>
+                    <input class="wrongchoice6" type="button" name="question" value="Expecto Patronum"><br>
+                    <input class="wrongchoice6" type="button" name="question" value="Alohomora"><br>
+                    <input class="wrongchoice6" type="button" name="question" value="Expelliarmus"><br>
+                    <input class="wrongchoice6" type="button" name="question" value="Sectumsempra"><br>
+                    <input id="obliviate" type="button" name="question" value="Obliviate"><br>
                 </form><br>
+                <h3 class="correctobliviate">Correct Answer: Obliviate</h3>
+                <img id="obliviate-image" src="assets/images/obliviate.jpg" alt="obliviate">
 
             <h3 class="question7">Who haunts the girl's bathroom at Hogwarts?</h3>
             <!--Screaming Serah, Crying Crystal, Laughing Luna, (Moaning Myrtle), Yelling Yolanda -->
             <form class="question7">
-                    <input type="button" name="question" value="Screaming Serah"><br>
-                    <input type="button" name="question" value="Crying Crystal"><br>
-                    <input type="button" name="question" value="Laughing Luna"><br>
-                    <input type="button" name="question" value="Moaning Myrtle"><br>
-                    <input type="button" name="question" value="Yelling Yolanda"><br>
+                    <input class="wrongchoice7" type="button" name="question" value="Screaming Serah"><br>
+                    <input class="wrongchoice7" type="button" name="question" value="Crying Crystal"><br>
+                    <input class="wrongchoice7" type="button" name="question" value="Laughing Luna"><br>
+                    <input id="myrtle" type="button" name="question" value="Moaning Myrtle"><br>
+                    <input class="wrongchoice7" type="button" name="question" value="Yelling Yolanda"><br>
                 </form><br>
+                <h3 class="correctmyrtle">Correct Answer: Moaning Myrtle</h3>
+                <img id="myrtle-image" src="assets/images/moaningmyrtle.jpg" alt="myrtle">
 
             <h3 class="question8">What is the phrase used to clear the Marauder's Map?</h3>
             <!--"End Quest", ("Mischief Managed"), "Shenanigans Secured", "Trouble Terminated", "Havoc Handled"-->
             <form class="question8">
-                    <input type="button" name="question" value="'End Quest'"><br>
-                    <input type="button" name="question" value="'Mischief Managed'"><br>
-                    <input type="button" name="question" value="'Shenanigans Secured'"><br>
-                    <input type="button" name="question" value="'Trouble Terminated'"><br>
-                    <input type="button" name="question" value="'Havoc Handled'"><br>
+                    <input class="wrongchoice8" type="button" name="question" value="'End Quest'"><br>
+                    <input id="map" type="button" name="question" value="'Mischief Managed'"><br>
+                    <input class="wrongchoice8" type="button" name="question" value="'Shenanigans Secured'"><br>
+                    <input class="wrongchoice8" type="button" name="question" value="'Trouble Terminated'"><br>
+                    <input class="wrongchoice8" type="button" name="question" value="'Havoc Handled'"><br>
                 </form><br>
+                <h3 class="correctmap">Correct Answer: "Mischief Managed"</h3>
+                <img id="map-image" src="assets/images/mischiefmanaged.jpg" alt="map">
 
         </div>
-
-        <!--Results at End of Game-->
-        <div class="results">
-            <h3 id="Pass">Well Done!</h3>
-            <h3 id="Fail">Nice Try</h3>
-
-            <h3>Correct Answers:<h3 id="rightanswers"></h3></h3>
-        
-            <h3>Incorrect Answers:<h3 id="wronganswers"></h3></h3>
-           
-            <h3>Unanswered:<h3 id="unanswered"></h3></h3>
-           
-        </div>
-
         <button class="playagain">Play Again</button>
 
     </div>
