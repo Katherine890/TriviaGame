@@ -48,7 +48,7 @@ $(document).ready(function () {
                     $("#playagain").show();
                     $("#unanswered").html(unAnswered--);
 
-                    $("#playagain").on("click", function () {
+                    $("#playagain").on("click", function () {                  // Play again button to reset game //
                         startOver();
                     })
 
@@ -762,7 +762,7 @@ $(document).ready(function () {
 
                 });
                 
-                if(rightAnswers >= 5 && wrongAnswers <= 4) {                                     // displays the number of right/wrong and unanswered answers //
+                if(rightAnswers >= 5 && wrongAnswers <= 4) {                 // displays the number of right/wrong and unanswered answers //
                     $("#pass").show();
                 } else {
                     $("#fail").show();
@@ -776,11 +776,3 @@ $(document).ready(function () {
 function startOver() {
     window.location.reload(false);
 }
-// Timer for one minute goes off. displays in "Time remaining"
-// Player cannot choose more than one answer.
-// After answer is chosen, display answer "correct" or "incorrect" for 5 seconds. Time remaining gameplay is frozen here.
-// Display next question and resume gameplay time. 
-// After time runs out, display results.
-// If get 6/8 or above correct, display "Bloody Wicked!"
-// If get 5/8 or lower correct, display "Bloody Hell"
-// Include Play Again Button at end.
