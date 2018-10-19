@@ -73,6 +73,7 @@ button:hover {
 
 .timedisplay {
     display: none;
+    font-size: 18px;
 }
 
 header,
