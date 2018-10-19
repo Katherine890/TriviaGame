@@ -22,7 +22,7 @@ $(document).ready(function () {
         // QUESTION 1: DOBBY //
 
         // Timer is created here //
-        var sec = 60
+        var sec = 60                                                                                  
         var timer = setInterval(function () {
             $("#time").text(sec--);
             if (sec == -1) {
@@ -31,6 +31,8 @@ $(document).ready(function () {
                 $(".outoftime").show();
 
                 $(".results").show();
+                $("#rightanswers").html(rightAnswers);
+                $("#wronganswers").html(wrongAnswers);
                 $("#unanswered").html(unAnswered);
             }
 
@@ -56,15 +58,15 @@ $(document).ready(function () {
                 $(".question1").replaceWith($("#dobby-image"));
                 correct.show();
                 $("#dobby-image").show();
-                $("#rightanswers").html(rightAnswers++);                       // right answer increases by 1 //
+                $("#rightanswers").html(rightAnswers++);                         // right answer increases by 1 //
                 $("#unanswered").html(unAnswered--);
 
                 var x = setInterval(function () {
 
                     if (count > 3) clearInterval(x);                           // After 3 seconds, the next question automatically displays //
+                    correct.hide();
                     $("#dobby-image").hide();
                     $("#dobby-image").replaceWith($(".question2"));
-                    correct.hide();
                     $(".question2").show();
 
                     if (sec == -1) {                                           // Displays results when time runs out and user DID choose an answer //
@@ -759,8 +761,8 @@ $(document).ready(function () {
                     }, 3000);
 
                 });
-
-                if(rightAnswers >= 5) {                                     // displays the number of right/wrong and unanswered answers //
+                
+                if(rightAnswers >= 5 && wrongAnswers <= 4) {                                     // displays the number of right/wrong and unanswered answers //
                     $("#pass").show();
                 } else {
                     $("#fail").show();

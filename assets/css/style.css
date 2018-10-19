@@ -5,7 +5,8 @@ body {
 
 /* The whole body */
 .container {
-    background-color: white;
+    background-color: black;
+    opacity: 0.9;
     width: 900px;
     text-align: center;
     position: relative;
@@ -18,26 +19,33 @@ body {
 .startbutton {
     font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;
     font-size: 18px;
-    color: black;
-    background-color: silver;
+    color: white;
+    background-color: #003764;
+    border-top-color: #2c4e6b;
+    border-left-color: #2c4e6b;
+    border-right-color: #001d35;
+    border-bottom-color: #001d35;
     width: 90px;
     height: 35px;
 }
 
 button:hover {
-    background-color: #0295b9;
-    border-top-color: #05697e;
-    border-left-color: #05697e;
-    border-bottom-color: #59b5cc;
-    border-right-color: #59b5cc;
+    background-color: #003764;
+    border-top-color: #001d35;
+    border-left-color: #001d35;
+    border-right-color: #2c4e6b;
+    border-bottom-color: #2c4e6b;
+
 }
 
 /* Content */
 .content input {
-    background-color: white;
+    color: white;
+    background-color: black;
     border-style: none;
     font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;
     font-size: 16px;
+    font-weight: bold;
 }
 
 .content input:hover {
@@ -69,10 +77,12 @@ button:hover {
 
 header,
 h2 {
+    color: white;
     font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;
 }
 
 h3 {
+    color: white;
     font-family: 'Cinzel', serif, Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
